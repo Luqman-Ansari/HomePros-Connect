@@ -1,0 +1,23 @@
+/* Define styles for a class named .custom-button */
+
+
+/* Define styles for the body of your application */
+body {
+  height: 100;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  place-content: center;
+  background: #DAEDFB;
+}
+
+/* Define styles for all buttons */
+button {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 4;
+  cursor: pointer;
+  border: none;
+  margin: .1em;
+}

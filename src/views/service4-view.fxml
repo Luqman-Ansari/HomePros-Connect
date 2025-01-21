@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="618.0" stylesheets="@../com/example/project/customer_style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.service4ViewController">
+    <children>
+        <ImageView fitHeight="429.0" fitWidth="631.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Img/27230.jpg" />
+            </image>
+        </ImageView>
+        <VBox layoutY="-1.0" prefHeight="412.0" prefWidth="167.0" style="-fx-background-color: #ffb700;">
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.5999755859375" minWidth="10.0" prefWidth="40.40000419616699" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.79998779296875" minWidth="10.0" prefWidth="126.799995803833" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Hello! " />
+                        <Label fx:id="nameTag" text="Label" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Label>
+                    </children>
+                </GridPane>
+                <Button fx:id="serviceRequestButton" mnemonicParsing="false" onAction="#serviceRequestButtonPressed" prefHeight="66.0" prefWidth="184.0" style="-fx-background-color: #000000; -fx-border-color: #ffb700;" styleClass="round-button" stylesheets="@../com/example/project/customer_style.css" text="Service Requests" textAlignment="JUSTIFY" textFill="#ffb700">
+                    <graphic>
+                        <ImageView fitHeight="58.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Img/services_requested.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ongoingServiceButton" mnemonicParsing="false" onAction="#ongoingServiceButtonPressed" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #000000; -fx-border-color: #ffb700;" styleClass="round-button" stylesheets="@../com/example/project/customer_style.css" text="Ongoing Services" textAlignment="JUSTIFY" textFill="#ffb700">
+                    <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Img/ongoing.jpg" />
+                            </image></ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="completedServicesButton" mnemonicParsing="false" onAction="#completedServicesButtonPressed" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #000000; -fx-border-color: #ffb700;" styleClass="round-button" stylesheets="@../com/example/project/customer_style.css" text="Completed Services" textAlignment="JUSTIFY" textFill="#ffb700">
+                    <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Img/services_completed.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addServicesButton" mnemonicParsing="false" onAction="#addServicesButtonPressed" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #000000; -fx-border-color: #ffb700;" styleClass="round-button" stylesheets="@../com/example/project/customer_style.css" text="Add Services" textAlignment="JUSTIFY" textFill="#ffb700">
+                    <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Img/Add_Service.png" />
+                            </image></ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="profileDetailsButton" mnemonicParsing="false" onAction="#profileDetailsButtonPressed" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #000000; -fx-border-color: #ffb700;" styleClass="round-button" stylesheets="@../com/example/project/customer_style.css" text="Profile Details" textAlignment="JUSTIFY" textFill="#ffb700">
+                    <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Img/prof_details.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonPressed" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #000000; -fx-border-color: #ffb700;" styleClass="round-button" stylesheets="@../com/example/project/customer_style.css" text="Logout" textAlignment="JUSTIFY" textFill="#ffb700">
+                    <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Img/Logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb700" height="31.0" layoutX="194.0" layoutY="-2.0" stroke="#ffb700" strokeType="INSIDE" width="390.0" />
+        <Text fill="#463838" layoutX="329.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Services">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+      <Text fill="#ffb700" fontSmoothingType="LCD" layoutX="194.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Services Available: ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="resultTableView" layoutX="290.0" layoutY="105.0" prefHeight="200.0" prefWidth="198.0">
+        <columns>
+          <TableColumn fx:id="ServiceNameCol" prefWidth="197.59998168945313" text="Service Name" />
+        </columns>
+      </TableView>
+      <TextField fx:id="addServiceBox" layoutX="229.0" layoutY="332.0" prefHeight="26.0" prefWidth="258.0" promptText="Add new Service ...." />
+      <Button fx:id="addServiceButton" layoutX="488.0" layoutY="332.0" mnemonicParsing="false" onAction="#addServiceButtonDBPressed" prefHeight="26.0" prefWidth="99.0" text="Add" />
+    </children>
+</AnchorPane>

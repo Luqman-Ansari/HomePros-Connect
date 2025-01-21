@@ -1,0 +1,25 @@
+/* Styling for round buttons */
+.button-default {
+    /* Adjust width and height to make the button circular */
+    -fx-width: 30px;
+    -fx-height: 40px;
+    -fx-border-radius: 50%; /* Makes the button circular */
+    -fx-background-color: #3f51b5; /* Button background color */
+    -fx-color: #ffffff; /* Text color */
+    -fx-text-align: center; /* Center text horizontally */
+    -fx-line-height: 40px; /* Center text vertically */
+    -fx-font-size: 13px; /* Adjust font size as needed */
+    -fx-cursor: pointer; /* Show pointer cursor on hover */
+    -fx-border: none; /* Remove border */
+    -fx-text-fill: #485707;
+}
+
+/* Hover effect for round buttons */
+.button:hover {
+    -fx-background-color: #5f77c8; /* Change color on hover */
+}
+
+.button-selected {
+    -fx-background-color: blue; /* You can set the color you want for the selected button */
+    -fx-text-fill: #ffb700;
+}
